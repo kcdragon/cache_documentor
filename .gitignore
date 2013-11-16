@@ -1,0 +1,27 @@
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+*.log
+
+# Ignore spec reports
+/spec/reports
+
+# Ignore Vim temp files
+*.swp
+
+# Ignore OSX Finder artifacts
+.DS_Store
+
+# Ignore test coverage reports
+/coverage
+coverage.data
+
+# Ignore Emacs temp files
+*.rb~
+*.html.haml~
+*.rb#
+*.html.haml~
+*.rake~
+Gemfile.local~
+*.html.erb~
+*.text.erb~

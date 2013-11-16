@@ -1,0 +1,12 @@
+#!/usr/local/bin/ruby -w
+
+require 'cache_documentor'
+
+exit 1 if ARGV.empty?
+path = ARGV.first
+
+processor = CacheDocumentor.document_application(path, verbose: false, include: /.*\.rb$/)
+
+$stdout.puts processor.cache_statements.map(&:to_s)
+
+exit 0
