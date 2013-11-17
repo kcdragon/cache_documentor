@@ -5,6 +5,9 @@ ruby '1.9.3'
 gem 'ruby_parser', '3.2.2'
 gem 'ruby2ruby', '2.0.6'
 
+gem 'activesupport', '4.0.1'
+gem 'rake'
+
 # Testing
 #gem 'cucumber','1.3.3'
 gem 'rspec', '2.14.1'

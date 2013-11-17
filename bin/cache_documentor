@@ -7,6 +7,6 @@ path = ARGV.first
 
 processor = CacheDocumentor.document_application(path, verbose: false, include: /.*\.rb$/)
 
-$stdout.puts processor.cache_statements.map(&:to_s)
+$stdout.puts processor.cache_statements.map(&:as_prose)
 
 exit 0

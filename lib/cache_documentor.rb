@@ -1,5 +1,7 @@
+require 'active_support/all'
 require 'find'
 require 'ruby_parser'
+require 'ruby2ruby'
 require 'sexp_processor'
 
 require 'cache_documentor/cache_sexp_processor'

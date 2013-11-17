@@ -15,11 +15,19 @@ describe CacheSexpProcessor do
     subject.process(sexp)
   end
 
-  it 'returns class name that cache statement is in' do
+  it 'stores class name that cache statement is in' do
     subject.cache_statements.first.class_name.should == 'FooController'
   end
 
-  it 'returns method name that cache statement is in' do
+  it 'stores method name that cache statement is in' do
     subject.cache_statements.first.method_name.should == 'index'
+  end
+
+  it 'stores key passed to cache statement' do
+    subject.cache_statements.first.key.should == 'key'
+  end
+
+  it 'stores options passed to cache statement' do
+    subject.cache_statements.first.options.should == { expires_in: 5.minutes }
   end
 end
