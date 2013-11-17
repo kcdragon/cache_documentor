@@ -1,4 +1,4 @@
-require 'lib/cache_documentor'
+require 'cache_documentor'
 
 require 'debugger'
 
