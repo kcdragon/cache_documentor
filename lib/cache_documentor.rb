@@ -19,7 +19,7 @@ module CacheDocumentor
     CacheSexpProcessor.new.process(sexp)
   end
 
-  def document_application(path, options)
+  def document_application(path, options = {})
     processor = CacheSexpProcessor.new
     parser = RubyParser.new
 
